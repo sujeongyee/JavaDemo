@@ -1,0 +1,28 @@
+package dain03;
+
+import java.util.Scanner;
+
+public class pro04 {
+	
+	public static void main(String[] args) {
+		
+		String a = "ProgrammerS123";
+		System.out.println(a.substring(0, 11));
+	}
+	
+	
+	
+	 static int solution(int[] num_list, int n) {
+	        int answer = 0;
+	        for(int a : num_list){
+	            if(a==n){
+	                answer++;
+	            }
+	        }
+	        
+	        return answer>0? 1:0;
+		}
+		
+	}
+
+

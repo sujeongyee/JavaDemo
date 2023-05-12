@@ -1,0 +1,18 @@
+package quiz10;
+
+public class User {
+	
+	private String name;
+	private int rrn;
+	private int age;
+	
+	User(){
+		
+	}
+	User(String name, int rrn, int age){
+		this.name = name;
+		this.rrn = rrn;
+		this.age = age;
+	}
+
+}

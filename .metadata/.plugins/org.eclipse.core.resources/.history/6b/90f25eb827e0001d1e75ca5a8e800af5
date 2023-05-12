@@ -1,0 +1,32 @@
+package dain03;
+
+import java.util.Scanner;
+
+public class pro04 {
+	
+	public static void main(String[] args) {
+		
+		String a = "ProgrammerS123";
+		int fl = Integer.parseInt(a);
+		System.out.println(fl);
+		System.out.println(a.substring(0, 11));
+		char[] b = a.toCharArray();
+		String[] c = a.split("");
+		for(String d : c) {
+//			if()
+//		}
+		
+	}
+	
+	
+	
+	 static int[] solution(String my_string) {
+	        int[] answer = {};
+	        
+	        
+	        return answer;
+		}
+		
+	}
+
+

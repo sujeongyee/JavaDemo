@@ -1,0 +1,33 @@
+package quiz22;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Productex {
+	
+	public static void main(String[] args) {
+		
+		String s = "20180429-02-002420180429 건담베이스 분당점 [HG] 1/144 건탱크 초기타입 (오리진ver.) 1 20,400원";
+		
+		String bb = "[가-힣a-zA-Z0-9\\/]*\\s";
+		String pattern1 = "\\d{8}-\\d{2}-\\d+";
+		String pattern2 = "건담[\\s가-힣]*점";
+		String pattern3 = "\\[[가-힣A-Z]*\\]";
+		String pattern4 = bb+bb+bb+bb+bb+bb;
+		String pattern5 = "[0-9,]+원";
+		List<String>list = Arrays.asList(pattern1,pattern2,pattern3,pattern4,pattern5);
+		for(String a:list) {
+			Matcher m = Pattern.compile(a).matcher(s);
+			while(m.find()) {
+				System.out.println(m.group());
+			}
+		}
+		
+		
+		
+		
+	}
+
+}
