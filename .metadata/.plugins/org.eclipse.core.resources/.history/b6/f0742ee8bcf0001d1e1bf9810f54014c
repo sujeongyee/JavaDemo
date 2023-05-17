@@ -1,0 +1,16 @@
+package study03;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		Child01 c = new Child01();
+		System.out.println(c.method1());
+		System.out.println(c.method2());
+		
+		Child02 c1 = new Child02(5,10);
+		System.out.println(c1.method1());
+		
+	}
+
+}

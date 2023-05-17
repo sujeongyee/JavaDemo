@@ -1,0 +1,91 @@
+package quiz01;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import java.util.Arrays;
+import java.util.Collections;
+public class Solution {
+
+	static long result;
+	public static void solution() {
+		/*
+		 * 정수 n을 기준으로 n과 가까운 수부터 정렬하려고 합니다. 
+		 * 이때 n으로부터의 거리가 같다면 더 큰 수를 앞에 오도록 배치합니다. 
+		 * 정수가 담긴 배열 numlist와 정수 n이 주어질 때 
+		 * numlist의 원소를 n으로부터 가까운 순서대로 정렬한 배열을 return하도록 
+		 * solution 함수를 완성해주세요.
+		 */
+
+
+
+	}
+
+	public static void main(String[] args) {
+		
+		int numer1 = 9;
+		int denom1 = 2;
+		int numer2 = 1;
+		int denom2 = 3;
+		int a = 0;
+		int key = denom1>numer1?denom1:numer1;
+		for(int i = 1 ; i <=key ; i++ ) {
+			if(denom1%i == 0 && numer1%i ==0) {
+				a = i;
+			}
+		}
+		if(a != 1) {
+			numer1/=a;
+			denom1/=a;
+		}
+		key = denom2>numer2?denom2:numer2;
+		for(int i = 1 ; i <=key ; i++ ) {
+			if(denom2%i == 0 && numer2%i ==0) {
+				a = i;
+			}
+		}
+		if(a != 1) {
+			numer2/=a;
+			denom2/=a;
+		}
+		
+		System.out.println(numer1+" "+denom1+ " "+numer2 + " "+denom2);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+//		int answer = 0; // 최대공약수		
+//		key = denom1>denom2?denom1:denom2;		
+//		for(int i = 1 ; i<= key ; i++) {
+//			if(denom1 % i == 0 && denom2 % i ==0) {
+//				answer = i;
+//			}
+//		}
+//		int answer2 = denom1*denom2/answer; // 최소 공배수
+//		
+//		int[] arr = new int[2];
+//		arr[0] = (answer2/denom1*numer1)+(answer2/denom2*numer2);
+//		arr[1] = answer2;
+//		
+//		System.out.println(Arrays.toString(arr));
+		
+
+		
+	}
+
+}	

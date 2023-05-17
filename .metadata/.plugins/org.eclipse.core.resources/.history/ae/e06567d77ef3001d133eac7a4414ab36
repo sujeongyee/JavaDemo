@@ -1,0 +1,21 @@
+package study03;
+
+public class MainList {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {5,46,52,4,323,5,46,345,52};
+		char[] arr2 = {'f','e','g','t','w','g','h'};
+		
+		Ascending a = new Ascending();
+		a.make(arr);
+		a.make(arr2);
+		
+		Descending d = new Descending();
+		d.make(arr);
+		d.make(arr);
+		
+		
+	}
+
+}

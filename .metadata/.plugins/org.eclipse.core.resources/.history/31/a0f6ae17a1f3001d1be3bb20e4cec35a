@@ -1,0 +1,53 @@
+package quiz01;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import java.util.Arrays;
+public class Solution {
+
+	static long result;
+	public static void solution() {
+		/*
+		 * 정수 n을 기준으로 n과 가까운 수부터 정렬하려고 합니다. 
+		 * 이때 n으로부터의 거리가 같다면 더 큰 수를 앞에 오도록 배치합니다. 
+		 * 정수가 담긴 배열 numlist와 정수 n이 주어질 때 
+		 * numlist의 원소를 n으로부터 가까운 순서대로 정렬한 배열을 return하도록 
+		 * solution 함수를 완성해주세요.
+		 */
+
+
+
+	}
+
+	public static void main(String[] args) {
+
+		int[] arr = {0,1,1,0};
+		int i = 0 ;
+		ArrayList<Integer> al = new ArrayList<>();
+		while(i<arr.length) {
+			if(al.size()==0) {
+				al.add(arr[i]);
+				i++;
+			}else if(al.get(al.size()-1)==arr[i]) {
+				al.remove(al.size()-1);
+				i++;
+			}else if(al.get(al.size()-1)!=arr[i]) {
+				al.add(arr[i]);
+				i++;
+			}
+		}
+		i=0;
+		int[] stk = new int[al.size()];
+		for(int j : al) {
+			stk[i]=j;
+			i++;
+		}
+		System.out.println(Arrays.toString(stk));
+	}
+
+}	

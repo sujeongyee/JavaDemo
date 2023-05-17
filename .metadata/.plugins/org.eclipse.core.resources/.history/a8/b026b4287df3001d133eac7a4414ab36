@@ -1,0 +1,14 @@
+package study03;
+
+public class Cat extends Animal{
+	
+	Cat(){
+		String sound = "야옹이는 야옹";
+		super.setSound(sound);
+	}
+	
+	public void makeSound(){
+		System.out.println("야옹~ 동물 소리를 재생합니다.");
+	}
+
+}

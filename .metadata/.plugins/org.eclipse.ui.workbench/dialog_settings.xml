@@ -24,6 +24,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\user\Desktop\230512.zip"/>
 			<item value="C:\Users\user\Desktop\a.zip"/>
 			<item value="C:\Users\user\Desktop\studysj.zip"/>
 			<item value="C:\Users\user\Desktop\Quiz.zip"/>
@@ -47,5 +48,7 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
+	</section>
+	<section name="FileSystemImportWizard">
 	</section>
 </section>
