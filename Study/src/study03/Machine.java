@@ -5,11 +5,11 @@ public class Machine {
 	String name;
 	int battery;
 
-	Machine(int battery){
+	Machine(int battery){ // 배터리 값을 매개변수로 받고, 배터리가 0 미만으로 떨어지지 않도록 초기화
 		this.battery = battery>0?battery:0;		
 	}
 
-	Machine(String name,int battery){
+	Machine(String name,int battery){ //이름과 배터리 값을 매개변수로 받고, 이름은 받은 그대로 초기화 배터리는 위와 마찬가지
 		this.name = name;
 		this.battery = battery>0?battery:0;
 	}

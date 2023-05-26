@@ -2,9 +2,9 @@ package study03;
 
 public class My___Child03 extends My___Parents{
 	
-	My___Child03(){
-		super(0,0);
-	}
+	// 기본 생성자 有 생략
+	
+	
 	public int method3(int a, int b){
 		super.setNum(a);
 		super.setNum2(b);

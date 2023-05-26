@@ -1,14 +1,11 @@
 package quiz01;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
+import java.util.TreeSet;
+
 public class Solution {
 
 	static long result;
@@ -27,49 +24,16 @@ public class Solution {
 
 	public static void main(String[] args) {
 
-		int[][] board = {{0,0,1,0,0},{0,0,0,0,0}}; // [3][2]
-		int[][] board2 = new int [board.length][board[0].length];
+		int n = 10;
 
-		for(int i = 0 ; i < board.length; i++) {
-			for(int j = 0 ; j < board[i].length ; j++) {
-				if(board[i][j] == 1) {
-					board2[i][j] = 1;
-					if(i!=0 ) {
-						board2[i-1][j] = 1;
-						board2[i-1][j+1] = 1;
-					}
-					if(j!=0) {
-						board2[i-1][j-1] = 1;
-						board2[i][j-1] = 1;
-						board2[i+1][j-1] = 1;
-					}
-					if(j!=board[i].length-1) {
-						board2[i-1][j+1] = 1;
-						board2[i][j+1] = 1;
-						board2[i+1][j+1] = 1;
-					}
-				}
-			}
-
+		ArrayList<Integer> al = new ArrayList<>();
+		
+		for(int i = 1 ; i<=Math.sqrt(n) ; i++) {
+			al.add(i);
 		}
-		int count = 0;
-		System.out.println(Arrays.deepToString(board2));
-		for(int k = 0 ; k < board2.length; k++) {
-			for(int j = 0 ; j < board2[k].length ; j++) {
-
-				if(board2[k][j]==0) {
-					count++;
-				}
-			}
-		}
-
-		System.out.println(count);
-
-
+		
+		
 
 	}
-
-
-
 
 }	

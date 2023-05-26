@@ -33,7 +33,7 @@ public class AISpeaker extends Machine{
 			powerOff();
 			return false;
 		}else {
-			if(num>=0 && num <=4) {
+			if(num>=0 && num <=4) { // 플레이리스트 번호 
 				battery-=10;
 				System.out.println("Playing "+playList[num]+" music, battery:" + battery);
 				return true;

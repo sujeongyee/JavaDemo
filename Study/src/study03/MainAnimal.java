@@ -6,6 +6,7 @@ public class MainAnimal {
 		
 		Cat cat = new Cat();
 		cat.makeSound();
+	
 		System.out.println("---------");
 		
 		Duck duck = new Duck();

@@ -8,6 +8,7 @@ public class MainShape {
 		Rectangle rect = new Rectangle("네모", 5, 4);
 		Triangle triangle = new Triangle("세모", 5, 10);
 		
+		
 	}
 
 }

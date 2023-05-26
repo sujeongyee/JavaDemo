@@ -2,7 +2,7 @@ package study03;
 
 import java.util.Arrays;
 
-public class Descending extends Ascending{
+public class Descending extends Ascending{ // 내림차순 정렬 자식클래스
 	
 	
 	public int[] make(int[] arr) {

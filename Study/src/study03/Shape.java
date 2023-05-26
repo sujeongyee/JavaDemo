@@ -1,6 +1,6 @@
 package study03;
 
-public class Shape {
+public class Shape { // 부모클래스
 	
 	private String name;
 	

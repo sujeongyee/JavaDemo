@@ -13,16 +13,16 @@ public class CalApp {
 x:		while(true) {
 	
 			System.out.print(">>");
-			String an = scan.next();
+			String an = scan.next(); // 숫자나 문자가 입력되는 첫번째 경우
 			
 			if(an.equals("q")) { // q가 입력 되면 종료
 				System.out.println("종료합니다.");
 				break;
 			}
-			String operator = scan.next();
-			int b = scan.nextInt();
+			String operator = scan.next(); // 연산자
+			int b = scan.nextInt(); // 숫자
 			
-			int a = Integer.parseInt(an);
+			int a = Integer.parseInt(an); // q가 아니면 바로 숫자로 바꿔줌
 			
 			switch (operator){
 			case "+" :  
